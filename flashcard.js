@@ -37,6 +37,9 @@ class Flashcard {
     cardContainer.classList.add('show-word');
 
     const wordSide = document.createElement('div');
+
+    wordSide.classList.add('popup');
+
     wordSide.classList.add('flashcard');
     wordSide.classList.add('word');
     wordSide.textContent = frontText;
