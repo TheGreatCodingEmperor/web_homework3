@@ -21,10 +21,13 @@ class App {
     // Uncomment this pair of lines to see the "flashcard" screen:
     //this.menu.hide();
     //this.flashcards.show();
+
+    //flashcard pop up animation
     function returnThis(){
       return this;
     }
     var APPthis = returnThis.bind(this);
+    
     var button = document.querySelectorAll('#choices div');
     for(let i=0;i<button.length;i++){
       button[i].addEventListener('click',function(){
@@ -32,6 +35,7 @@ class App {
         APPthis().flashcards.show();
       });
     }
+
 
     // Uncomment this pair of lines to see the "results" screen:
     // this.menu.hide();
